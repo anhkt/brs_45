@@ -1,0 +1,46 @@
+<% provide :title ,t("static_pages.home.title_page") %>
+<marquee id="marq" scrollamount="3" direction="left" loop="50" scrolldelay="0"
+  behavior="alternate" onmouseover="this.stop()" onmouseout="this.start()">
+  <%= t ".content" %></marquee> 
+<div class = "center jumbotron">
+  <div class="neoslideshow">
+    <%= image_tag "html5.jpg" %>
+    <%= image_tag "mysql.jpg" %>
+    <%= image_tag "rails.png" %>
+    <%= image_tag "steven_job.jpg" %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <%= image_tag "html5.jpg" %>
+      <div class="caption">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <%= image_tag "mysql.jpg" %>
+      <div class="caption">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <%= image_tag "rails.png" %>
+      <div class="caption">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <%= image_tag "steven_job.jpg" %>
+      <div class="caption">
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
