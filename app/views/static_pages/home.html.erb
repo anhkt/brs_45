@@ -4,16 +4,16 @@
   <%= t ".content" %></marquee> 
 <div class = "center jumbotron">
   <div class="neoslideshow">
-    <%= image_tag "html5.jpg" %>
-    <%= image_tag "mysql.jpg" %>
-    <%= image_tag "rails.png" %>
-    <%= image_tag "steven_job.jpg" %>
+    <%= image_tag "html5.jpg", size: Settings.slide_size %>
+    <%= image_tag "mysql.jpg", size: Settings.slide_size %>
+    <%= image_tag "rails.png", size: Settings.slide_size %>
+    <%= image_tag "steven_job.jpg", size: Settings.slide_size %>
   </div>
 </div>
 <div class="row">
   <div class="col-md-3">
     <div class="thumbnail">
-      <%= image_tag "html5.jpg" %>
+      <%= image_tag "html5.jpg", size: Settings.thumb_size %>
       <div class="caption">
         <p></p>
       </div>
@@ -21,7 +21,7 @@
   </div>
   <div class="col-md-3">
     <div class="thumbnail">
-      <%= image_tag "mysql.jpg" %>
+      <%= image_tag "mysql.jpg", size: Settings.thumb_size %>
       <div class="caption">
         <p></p>
       </div>
@@ -29,7 +29,7 @@
   </div>
   <div class="col-md-3">
     <div class="thumbnail">
-      <%= image_tag "rails.png" %>
+      <%= image_tag "rails.png", size: Settings.thumb_size %>
       <div class="caption">
         <p></p>
       </div>
@@ -37,7 +37,7 @@
   </div>
   <div class="col-md-3">
     <div class="thumbnail">
-      <%= image_tag "steven_job.jpg" %>
+      <%= image_tag "steven_job.jpg", size: Settings.thumb_size %>
       <div class="caption">
         <p></p>
       </div>
