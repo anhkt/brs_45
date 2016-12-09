@@ -12,5 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+$(function(){
+  $('.neoslideshow img:gt(0)').hide();
+  setInterval(function(){
+    $('.neoslideshow :first-child').fadeOut()
+      .next('img').fadeIn()
+      .end().appendTo('.neoslideshow');}, 4000);
+})
