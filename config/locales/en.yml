@@ -17,3 +17,5 @@ en:
       logo_app: "BookReview"
       title_page: "Home"
       content: "Welcome to Book Review's Framgia"
+  config:
+    devise: "please-change-me-at-config-initializers-devise@example.com"
