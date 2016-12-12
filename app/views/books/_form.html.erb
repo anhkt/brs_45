@@ -1,0 +1,19 @@
+<ul class="list-group">
+  <div class="row">
+    <% @books.each do |book| %>
+      <div class="col-md-3 index-grid-image">
+        <% if book.image? %>
+          <%= link_to image_tag(book.image.url,
+            class: "book_cover_img center-block"), book_path(book) %>
+        <% else %>
+          <%= link_to image_tag("html5.jpg",
+            class: "book_cover_img center-block"),size: Settings.size, book %>
+        <% end %>
+        <%= @book.title %>
+        <%= @book.description %>
+      </div>
+      <div class="name">
+      </div>
+    <% end %>
+  </div>
+</ul>

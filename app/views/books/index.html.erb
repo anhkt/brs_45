@@ -1,0 +1,11 @@
+<div class="row">
+  <% @books.each do |book| %>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <strong id="title"><%= link_to book.title, book_path(book) %></strong>
+        <h4><%= t ".author" %> : <%= book.author %></h4>
+        <h4><%= t ".page" %>: <%= book.page %></h4>
+      </div>
+    </div>
+  <% end %>
+</div>

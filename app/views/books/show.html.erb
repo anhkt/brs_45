@@ -1,0 +1,26 @@
+<% provide :title, t(".title") %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 book_image">
+      <div class="row">
+        <% if @book.image? %>
+          <%= image_tag @book.image.url, class: "center-block" %>
+        <% else %>
+          <%= link_to image_tag("html5.jpg", class: "center-block",
+            size: Settings.size), @book %>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <%= link_to t(".review"), "#", class: "btn btn-success" %>      
+    </div>
+    <div class="col-md-12">
+      <h2><%= link_to @book.title, book_path(@book) %></h2>
+      <label><%= t ".des" %></label> : </br>
+        <p class="break-line"><%= @book.description %></p>
+      <h4><%= t ".author" %> : <%= @book.author %></h4>
+      <label><%= t ".page" %> : <%= @book.page %></label>
+    </div>
+  </div>
+</div>  
+

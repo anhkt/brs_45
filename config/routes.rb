@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {
     omniauth_callbacks: "omniauth_callbacks#create"
   }
+
+  resources :books, only: [:index, :show]
+  resources :categories, only: :show
 end

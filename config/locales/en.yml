@@ -1,5 +1,7 @@
 en:
   hello: "Hello world"
+  config:
+    devise: "please-change-me-at-config-initializers-devise@example.com"
   helper:
     base_title: "Book Review"
   layouts:
@@ -8,6 +10,7 @@ en:
       home: "Home"
       login: "Log in"
       signup: "Sign up"
+      categories: "Categories"
     footer:
       title: "Book Review"
       date:
@@ -19,3 +22,27 @@ en:
       content: "Welcome to Book Review's Framgia"
   config:
     devise: "please-change-me-at-config-initializers-devise@example.com"
+
+  controllers:
+    books:
+      danger: "No have books in category"
+
+  books:
+    show:
+      title: "All Book"
+      author: "Author"
+      page: "Pages"
+      des: "Description"
+      review: " Create Review"
+    index:
+      all: "All Books"
+      author: "Author"
+      page: "Pages"
+
+  categories:
+    show:
+      blank: "Categories is empty."
+    index:
+      title: "All Categories"
+      book_nil: "Book is not exit."
+      all_book: "All Books"

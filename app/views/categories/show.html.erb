@@ -1,0 +1,16 @@
+<% provide :title, @category.name %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <%= render "categories/form" %>
+    </div>
+    <div class="col-md-9">
+      <% if @books.any? %>
+        <h3><%= t ".blank" %></h3>
+      <% else %>
+        <h3><%= @category.name %></h3>
+        <%= render "books/form" %>
+      <% end %>
+    </div>
+  </div>
+</div>

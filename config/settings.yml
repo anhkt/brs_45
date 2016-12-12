@@ -1,2 +1,6 @@
 slide_size: "1000x435"
 thumb_size: "350x233"
+
+per_page: 3
+
+size: "350x350"

@@ -14,6 +14,9 @@ gem "jbuilder", "~> 2.5"
 gem "config"
 gem "devise"
 gem "omniauth-facebook"
+gem "faker"
+gem "will_paginate", "3.1.0"
+gem "bootstrap-will_paginate", "0.0.10"
 
 group :development, :test do
   gem "byebug", platform: :mri
