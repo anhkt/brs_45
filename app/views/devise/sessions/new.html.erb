@@ -46,7 +46,7 @@
                   <% resource_class.omniauth_providers.each do |provider| %>
                     <%= link_to omniauth_authorize_path(resource_name, provider),
                       class: "btn btn-#{provider}" do %>
-                      <i class="fa fa-<%= provider %>"></i><%= t provider %>
+                      <i class="fa-tw-<%= provider %>"></i><%= t provider %>
                     <% end %>
                   <% end %>
                 <% end %>

@@ -8,5 +8,6 @@ en:
       email_field: "Email address"
       password_field: "Password"
       social: "Or Login via"
+      new_here: "New here? "
     sign_out: Log out
     sign_in: Log in/ Sign up
