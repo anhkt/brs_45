@@ -1,4 +1,9 @@
 class User < ApplicationRecord
+<<<<<<< HEAD
+=======
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+>>>>>>> login-sigup
   devise :database_authenticatable, :registerable,
     :rememberable, :trackable, :validatable
   has_many :likes, dependent: :destroy
