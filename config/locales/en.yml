@@ -1,5 +1,33 @@
 en:
   hello: "Hello world"
+  admin:
+    categories:
+      index:
+        title: "Manage Category"
+        stt: "STT"
+        name: "Title"
+        action: "Action"
+        edit_button: "Edit"
+        delete_button: "Delete"
+        sure: "Are you sure?"
+        title_page: ""
+      edit:
+        title: "Update Category"
+        update_button: "Update category"
+        update_category: "Update Category"
+      new:
+        title: "New category"
+        submit_button: "Created Category"
+        create: "Create Category"
+
+    controllers:
+      categories:
+        danger: "Categories not found"
+        success: "Category is created successfully!"
+        update_success: "Category is updated successfully!"
+        delete_success: "Category is deleted successfully!"
+        delete_fail: "Category is not deleted!"
+
   helper:
     base_title: "Book Review"
   layouts:
@@ -8,6 +36,7 @@ en:
       home: "Home"
       login: "Log in"
       signup: "Sign up"
+      category: "Manage Category"
     footer:
       title: "Book Review"
       date:
@@ -19,3 +48,7 @@ en:
       content: "Welcome to Book Review's Framgia"
   config:
     devise: "please-change-me-at-config-initializers-devise@example.com"
+  
+  shared:
+    error_message: "This error contain: "
+    error: "error"

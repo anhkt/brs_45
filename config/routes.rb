@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {
     omniauth_callbacks: "omniauth_callbacks#create"
   }
+
+  namespace :admin do
+    resources :categories
+  end
 end
